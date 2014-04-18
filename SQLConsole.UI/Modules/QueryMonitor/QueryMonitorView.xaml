@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="SQLConsole.UI.Modules.QueryMonitor.QueryMonitorView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:d3="http://research.microsoft.com/DynamicDataDisplay/1.0"
+             xmlns:Controls="clr-namespace:SQLConsole.UI.Controls" mc:Ignorable="d" d:DesignHeight="300" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Controls:SqlEditor Grid.ColumnSpan="6" Text="{Binding Path=SqlScript, Mode=TwoWay}" />
+
+            <Button Grid.Row="1" Command="{Binding ClearCommand}">Insert delimiter</Button>
+
+            <Button Grid.Row="1" Grid.Column="1" Command="{Binding ClearCommand}">Clear results chart</Button>
+
+
+            <Label Grid.Row="1" Grid.Column="2" VerticalAlignment="Center">Interval (msec):</Label>
+
+            <TextBox Grid.Row="1" Margin="2" Grid.Column="3" Width="50" VerticalAlignment="Center"
+                     TextAlignment="Right" Text="{Binding Path=Interval, Mode=TwoWay}" />
+            <Button Grid.Row="1" Grid.Column="4" Command="{Binding NewRunCommand}">Start New Run</Button>
+            <Button Grid.Row="1" Grid.Column="5" Command="{Binding StartStopCommand}" Name="startStopButton">Start/Stop</Button>
+        </Grid>
+
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <d3:ChartPlotter Margin="5" Padding="3" Name="plotter" />
+            
+        </Grid>
+    </Grid>
+</UserControl>

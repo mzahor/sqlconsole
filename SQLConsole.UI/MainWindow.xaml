@@ -1,0 +1,32 @@
+﻿<Window x:Class="SQLConsole.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:StressTool="clr-namespace:SQLConsole.UI.Modules.StressTool"
+        xmlns:QueryMonitor="clr-namespace:SQLConsole.UI.Modules.QueryMonitor"
+        xmlns:Views="clr-namespace:SQLConsole.UI.Modules.Connection" 
+        Title="SQLConsole" Height="600" Width="850"
+        >
+    <TabControl TabStripPlacement="Top" Name="componentsTabControl" >
+        <TabControl.Resources>
+            <Style TargetType="{x:Type TabPanel}">
+                <Setter Property="HorizontalAlignment" Value="Center" />
+            </Style>
+        </TabControl.Resources>
+        
+        <TabItem Header="Connection" Name="connectionTab">
+            <Views:SqlConnectionView />
+        </TabItem>
+        
+        <TabItem Header="Stress tool" Name="stressToolTab">
+            <Grid>
+                <StressTool:StressToolView x:Name="SqlRunner"/>
+            </Grid>
+        </TabItem>
+        
+        <TabItem Header="Query Monitor" Name="queueMonitorTab">
+            <Grid>
+                <QueryMonitor:QueryMonitorView x:Name="QueueMonitor" PlotCollection="{Binding PlotCollection, Mode=TwoWay}" />
+            </Grid>
+        </TabItem>
+    </TabControl>
+</Window>

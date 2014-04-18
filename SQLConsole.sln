@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLConsole.UI", "SQLConsole.UI\SQLConsole.UI.csproj", "{A2340F23-3457-4DA7-9443-516D6B0AF16D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLConsole.BizLogic", "SQLConsole.BizLogic\SQLConsole.BizLogic.csproj", "{B7DAA7B0-9F96-409B-A582-99E4DA27BA4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLConsole.BizLogic.Tests", "SQLConsole.BizLogic.Tests\SQLConsole.BizLogic.Tests.csproj", "{2D3693F9-F2D8-4CAF-A107-C06FA70E7080}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D6B39B1E-1103-4409-A20E-31FC590374B6}"
+	ProjectSection(SolutionItems) = preProject
+		SQLConsole.vsmdi = SQLConsole.vsmdi
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B627CF1A-7CD8-48C9-8B53-ADBAE9ED60A6}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://sqlconsole.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SQLConsole.UI\\SQLConsole.UI.csproj
+		SccProjectName1 = SQLConsole.UI
+		SccLocalPath1 = SQLConsole.UI
+		SccProjectUniqueName2 = SQLConsole.BizLogic\\SQLConsole.BizLogic.csproj
+		SccProjectName2 = SQLConsole.BizLogic
+		SccLocalPath2 = SQLConsole.BizLogic
+		SccProjectUniqueName3 = SQLConsole.BizLogic.Tests\\SQLConsole.BizLogic.Tests.csproj
+		SccProjectName3 = SQLConsole.BizLogic.Tests
+		SccLocalPath3 = SQLConsole.BizLogic.Tests
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = SQLConsole.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2340F23-3457-4DA7-9443-516D6B0AF16D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{A2340F23-3457-4DA7-9443-516D6B0AF16D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{A2340F23-3457-4DA7-9443-516D6B0AF16D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{A2340F23-3457-4DA7-9443-516D6B0AF16D}.Debug|x86.ActiveCfg = Debug|x86
+		{A2340F23-3457-4DA7-9443-516D6B0AF16D}.Debug|x86.Build.0 = Debug|x86
+		{A2340F23-3457-4DA7-9443-516D6B0AF16D}.Release|Any CPU.ActiveCfg = Release|x86
+		{A2340F23-3457-4DA7-9443-516D6B0AF16D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{A2340F23-3457-4DA7-9443-516D6B0AF16D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{A2340F23-3457-4DA7-9443-516D6B0AF16D}.Release|x86.ActiveCfg = Release|x86
+		{A2340F23-3457-4DA7-9443-516D6B0AF16D}.Release|x86.Build.0 = Release|x86
+		{B7DAA7B0-9F96-409B-A582-99E4DA27BA4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7DAA7B0-9F96-409B-A582-99E4DA27BA4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7DAA7B0-9F96-409B-A582-99E4DA27BA4C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B7DAA7B0-9F96-409B-A582-99E4DA27BA4C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B7DAA7B0-9F96-409B-A582-99E4DA27BA4C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B7DAA7B0-9F96-409B-A582-99E4DA27BA4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7DAA7B0-9F96-409B-A582-99E4DA27BA4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7DAA7B0-9F96-409B-A582-99E4DA27BA4C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B7DAA7B0-9F96-409B-A582-99E4DA27BA4C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B7DAA7B0-9F96-409B-A582-99E4DA27BA4C}.Release|x86.ActiveCfg = Release|Any CPU
+		{2D3693F9-F2D8-4CAF-A107-C06FA70E7080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D3693F9-F2D8-4CAF-A107-C06FA70E7080}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D3693F9-F2D8-4CAF-A107-C06FA70E7080}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2D3693F9-F2D8-4CAF-A107-C06FA70E7080}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2D3693F9-F2D8-4CAF-A107-C06FA70E7080}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2D3693F9-F2D8-4CAF-A107-C06FA70E7080}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D3693F9-F2D8-4CAF-A107-C06FA70E7080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D3693F9-F2D8-4CAF-A107-C06FA70E7080}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2D3693F9-F2D8-4CAF-A107-C06FA70E7080}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2D3693F9-F2D8-4CAF-A107-C06FA70E7080}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:Converters="clr-namespace:SQLConsole.UI.Converters">
+    <LinearGradientBrush x:Key="ResultItemBackground">
+        <GradientStopCollection>
+            <GradientStop Offset="0" Color="AliceBlue"/>
+        </GradientStopCollection>
+    </LinearGradientBrush>
+
+    <Style TargetType="Button">
+        <Setter Property="Margin" Value="2"/>
+        <Setter Property="Padding" Value="5"/>
+    </Style>
+    
+    <Converters:InverseBoolConverter x:Key="InverseConverter" />
+</ResourceDictionary>
